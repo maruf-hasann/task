@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+* {
+   font-family: 'Montserrat', sans-serif;
+   box-sizing: border-box;
+ 
+}
+/* Basic CSS */
+.container {
+    max-width:1140px ;
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+   max-width: 100%;
+   height: auto;
+}
+.common_header {
+   text-align: center;
+   font-size: 3rem;
+   color:#343f52 ;
+}
+
+.btn {
+    background:#5EB9F0 ;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 40px;
+    transition: 0.6s;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: #3f78e0;
+    
+    box-shadow: -4px 3px 12px #9bdaff;
+}
+/* Basic CSS  END*/
+/* Header Section */
+.mobile-nav {
+padding: 16px 8px;
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bolder;
+}
+nav ul {
+    display: flex;
+    list-style:none;
+}
+nav ul li a {
+ color: rgb(46, 45, 45);
+ text-decoration: none;
+ padding: 0px 16px;
+ font-size: 1.1rem;
+ font-weight: 500;
+}
+
+/* Hero Section */
+.inner_hero {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+     padding-bottom: 70px;
+     padding-top: 50px;
+}
+.hero_text h1 {
+    font-size: 2.7rem;
+}
+.hero_text strong {
+    color:#3f78e0 ;
+}
+.hero_text p {
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #60697b;
+    margin-bottom: 24px;
+
+}
+/* Services */
+.inner_service {
+    display: flex;
+    gap: 41px;
+    justify-content: space-between;
+    position: sticky;
+   margin-bottom: 70px;
+    
+}
+.inner_service div  {
+    text-align: center;
+}
+.inner_service div h3 {
+ color: #343f52;
+}
+/* contact */
+.inner_contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     padding-bottom: 70px;
+   
+}
+.inner_contact img {
+    width: 500px;
+   
+}
+.form_section  {
+    background: #ecf3ff;
+    padding: 23px 36px;
+    border-radius: 8px;
+}
+input {
+    display: block;
+    border: none;
+    outline: none;
+    width: 300px;
+    padding: 12px 16px;
+    background-color: #d8e2f5;
+    margin-bottom: 16px;
+    border-radius: 40px;
+}
+textarea {
+    width: 200px;
+    display: block;
+     padding: 12px 16px;
+        border: none;
+    outline: none;
+      background-color: #666c7015;
+       border-radius: 8px;
+       margin-bottom: 24px;
+}
+
+.guide {
+    margin: 40px 0px;
+    text-align: center;
+}
+.guide p {
+font-size: 2.1rem;
+font-weight: 700;
+}
+.footer p {
+    font-size: 1rem;
+    text-align: center;
+    color: #60697b;
+    margin: 50px 0px;
+    
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .header-desktop {
+        display: none;
+    }
+.inner_hero {
+    flex-direction: column-reverse;
+      padding-top: 0px;
+       padding-bottom: 10px;
+    
+}
+.hero_text {
+    text-align: center;
+}
+.hero_text p {
+    width: 100%;
+}
+.inner_contact {
+    flex-direction: column-reverse;
+}
+.common_header {
+    font-size: 2.4rem;
+}
+.inner_service {
+    flex-direction: column;
+     margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { .mobile-nav {
+        display: none
+    }}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { .mobile-nav {
+        display: none
+    }}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .mobile-nav {
+        display: none
+    }
+}
